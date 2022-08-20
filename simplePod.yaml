@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: loginapp
+  labels:
+    env: prod
+    application: loginapp
+spec:
+  containers:
+    - name: loginapp
+      image: tomcat:8.5
